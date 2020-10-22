@@ -8,22 +8,20 @@ print(t[-1])
 
 for i in t:
     print(i)
-"""
-"""
+
 l=list(t)
 l.append(5)
-print(1)
-t2=tuple(1)
-l.pop(2)
-l.remove(2)#nombre
-del l[2]#borrar variables
-print(type(l))
+print(l)
+t2=tuple(l)
+l.pop()
+l.remove(2)
+del l[2]
 print(type(t))
+print(type(l))
 print(type(t2))
-"""
-"""
+
 Progra = {'Juan','Pedro','Maria','Diana'}
-Calculo = {'jesus','Psantiago','pedro','Maria'}
+Calculo = {'Santiago','Jesus','Pedro','Maria'}
 Progra.add('Eduardo')
 Progra.remove('Juan')#borrar
 #del Progra #eliminar para ciempre de la RAM
@@ -35,49 +33,57 @@ C2=Progra | Calculo
 print(C2)
 
 
-print('Maria' in Progra)
+print('Mary' in Progra)
 print(Calculo)
-print(Calculo)
+print(Progra)
 """
 #Diccionarios (JSON)
 #key, value
-alumnos1={'nombre':'Juan',
+
+alumno1={'nombre':'Juan',
          'edad':20,
          'carrera':'ICO',
          'promedio':9.5
-         }#tiene un nombre y un valor
-
-alumnos2={'nombre':'Pedro',
+         }
+         #tiene un nombre y un valor
+alumno2={'nombre':'Pedro',
          'edad':19,
          'carrera':'IMT',
          'promedio':9.2
-         }#tiene un nombre y un valor
-alumnos3={'nombre':'Maria',
+         }
+         #tiene un nombre y un valor
+a3={'nombre':'Maria',
          'edad':21,
-         'carrera':'IBERO',
+         'carrera':'IBIO',
          'promedio':9.6
-         }#tiene un nombre y un valor
-
-alumnos = [alumnos1,alumnos2,a3]
+         }
+         #tiene un nombre y un valor
+alumnos = [alumno1,alumno2,a3]
 
 for a in alumnos:
-     print('{:<10s}{:<5d}{:<10s}{:<5.2f}'.format(a['nombre'],a['edad'],a['promedio']))
+    print('{:<10s}{:<5d}{:<10s}{:<5.2f}'.format(a['nombre'],a['edad'],a['carrera'],a['promedio']))
+
 
 
 """
 print(len(alumnos))
-alumnos['promedio']=8.0
+alumnos['promedio']=9.5
 alumnos['nombre']='Maria'
-print (alumnos['nombre'])
-print (alumnos['promedio'])
-print (alumnos.get('promedio'))
+print(alumnos['nombre'])
+print(alumnos['promedio'])
+print(alumnos.get('promedio'))
 print(alumnos)
 
-for v in alumnos.values():#k.v
+for k,v in alumnos.items():#k.v
     #print(alumnos[d])
     #print(k)
     print(v)
 
-#print(alumnos.values())#lista de los valores
-#print(alumnos.keys())#keys
-#print(alumnos.items())#lista de tuples es nombre y valor
+
+for v in alumnos.values():    
+    print(v)
+    
+print(alumnos.values())  #lista de los valores  
+print(alumnos.keys())#keys
+print(alumnos.items())#lista de tuples es nombre y valor
+"""

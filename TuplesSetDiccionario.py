@@ -47,13 +47,18 @@ alumnos1={'nombre':'Juan',
          'promedio':9.5
          }#tiene un nombre y un valor
 
-alumnos2={'nombre':'Ana',
-         'edad':15,
-         'carrera':'ICO',
-         'promedio':8.5
+alumnos2={'nombre':'Pedro',
+         'edad':19,
+         'carrera':'IMT',
+         'promedio':9.2
+         }#tiene un nombre y un valor
+alumnos3={'nombre':'Maria',
+         'edad':21,
+         'carrera':'IBERO',
+         'promedio':9.6
          }#tiene un nombre y un valor
 
-alumnos = [alumnos1,alumnos2]
+alumnos = [alumnos1,alumnos2,a3]
 
 for a in alumnos:
      print('{:<10s}{:<5d}{:<10s}{:<5.2f}'.format(a['nombre'],a['edad'],a['promedio']))

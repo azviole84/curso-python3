@@ -23,6 +23,7 @@ while opc !=6:
         edades.append(int(input('Edad:')))
         carreras.append(input('Carrera:'))
         promedios.append(float(input('Promedio:')))
+        #datos agregados en listas
     
     elif opc ==2:
         pass

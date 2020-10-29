@@ -1,1 +1,6 @@
-cadena2
+cadena2cadena21,juan,15,ico
+1,as,22,dis
+1,tes,19,mer
+1,juan,20,ico
+1,maria,19,ibio
+6,pedro,23,cs
